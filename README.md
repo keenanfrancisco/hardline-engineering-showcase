@@ -39,6 +39,8 @@ As reported by GitHub's contributor API for the private production repository on
 | [Keenan Francisco](https://github.com/keenanfrancisco) | 460 | Spatial contracts, field validation, human review, security review, iOS capture, release safety |
 | [Caleb Ponce](https://github.com/calebponce) | 257 | Full-stack product delivery, reconstruction integration, security, sharing, field UX |
 
+Commit counts include work written with AI coding assistants (Claude Code, Codex). Those commits carry co-author lines in the private history, and GitHub separately lists 23 commits under a claude account that are not counted here. The founders chose the work, made the architecture, review, and security decisions, and approved every change before it shipped.
+
 These counts establish sustained authorship, not sole ownership of shared decisions. Outside reviewers cannot inspect the private Git objects; the internal verification method and selected references are in [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
 
 ## Run locally

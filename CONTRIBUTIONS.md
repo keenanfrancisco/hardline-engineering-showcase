@@ -11,6 +11,8 @@ On October 28, 2026, GitHub's contributors endpoint reported:
 
 The selected entries below were also checked against the private repository's local Git history for author, date, subject, and affected surfaces. Short commit identifiers are included as private-history references; they do not expose or link to the underlying source, and an outside reviewer cannot independently verify them.
 
+Commit counts include work written with AI coding assistants (Claude Code, Codex). Those commits carry co-author lines in the private history, and GitHub separately lists 23 commits under a claude account that are not counted here. The founders chose the work, made the architecture, review, and security decisions, and approved every change before it shipped.
+
 Counts can change after the stated date. They represent attributed commits, not lines of code, relative importance, or sole ownership of collaborative product decisions.
 
 ## Keenan Francisco
