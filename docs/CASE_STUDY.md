@@ -27,6 +27,20 @@ A public-safe version of the contract is:
 
 This distinction is more important than visual polish: a trustworthy record needs to explain the basis for a location.
 
+## Decision: nothing is reviewed until a person approves it
+
+Detections and human corrections are stored separately. A reviewer's corrections are layered over the detections, the result is frozen into an immutable revision, and only an approved revision counts as the record. Every correction is attributed and timestamped.
+
+That state travels with the record. A shared link serves the approved revision when one exists; when none does, the page says the locations are AI detections no person has reviewed yet. A link holder cannot walk from a shared record to a working draft or to a revision nobody approved.
+
+## Decision: adversarial security review before customer scans
+
+A Hardline record says where the pipes and wiring are inside a home, tied to an address. Before the first customer scans, the team ran an adversarial review of the backend, ranked by who could reach each issue: an unauthenticated visitor, any signed-in account, or the holder of a share link. It covered tenant isolation, share-link scope and revocation, device-token lifecycle, storage access, and billing entitlements.
+
+Issues that crossed accounts or reached share-link holders were fixed, each with a regression test that failed before the fix, and then checked against the deployed system. One structural change came out of it: share links became random, revocable tokens instead of record identifiers.
+
+This artifact describes the method; it does not list individual findings.
+
 ## Decision: make failure observable
 
 An asynchronous pipeline can appear healthy while work has stalled between upload, queue, worker, and result surfaces. The team added lifecycle visibility and alerting so a silent scan or worker failure becomes a diagnosable state.

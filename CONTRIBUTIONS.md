@@ -4,12 +4,14 @@ This document records internally verified portfolio attribution while keeping th
 
 ## Method
 
-On September 8, 2026, GitHub's contributors endpoint reported:
+On October 28, 2026, GitHub's contributors endpoint reported:
 
-- Keenan Francisco ([keenanfrancisco](https://github.com/keenanfrancisco)): 286 authored commits
-- Caleb Ponce ([calebponce](https://github.com/calebponce)): 228 authored commits
+- Keenan Francisco ([keenanfrancisco](https://github.com/keenanfrancisco)): 460 authored commits
+- Caleb Ponce ([calebponce](https://github.com/calebponce)): 257 authored commits
 
 The selected entries below were also checked against the private repository's local Git history for author, date, subject, and affected surfaces. Short commit identifiers are included as private-history references; they do not expose or link to the underlying source, and an outside reviewer cannot independently verify them.
+
+Commit counts include work written with AI coding assistants (Claude Code, Codex). Those commits carry co-author lines in the private history, and GitHub separately lists 23 commits under a claude account that are not counted here. The founders chose the work, made the architecture, review, and security decisions, and approved every change before it shipped.
 
 Counts can change after the stated date. They represent attributed commits, not lines of code, relative importance, or sole ownership of collaborative product decisions.
 
@@ -19,6 +21,9 @@ Selected authored work:
 
 | Private reference | Date | Public-safe summary |
 | --- | --- | --- |
+| c60e832 | 2026-10-23 | Labeled shared records that no person has approved as unreviewed AI output |
+| 3ec85e2 | 2026-10-22 | Scoped storage access to the owning scan during a pre-launch security review |
+| d309478 | 2026-06-13 | Built human review and approval for utility records |
 | d47ee80 | 2026-09-05 | Tightened the capture-to-return accuracy contract across backend, web, and iOS surfaces |
 | c916f70 | 2026-09-06 | Prevented ground-truth measurements from being derived from a reference frame that did not share the required datum |
 | 0b05bcb | 2026-09-04 | Added an independent replay baseline for adversarial evaluation |
@@ -26,7 +31,7 @@ Selected authored work:
 | da1275b | 2026-08-20 | Made silent scan and worker failures observable |
 | c2a767b | 2026-08-25 | Added release checks and secret scanning |
 
-Public-safe focus: spatial contracts, reliability, field validation, iOS capture, observability, and release safety.
+Public-safe focus: spatial contracts, reliability, field validation, human review, security review, iOS capture, observability, and release safety.
 
 ## Caleb Ponce
 
