@@ -32,12 +32,12 @@ The production application and its complete Git history remain private. This rep
 
 ## Founder record
 
-As reported by GitHub's contributor API for the private production repository on September 8, 2026:
+As reported by GitHub's contributor API for the private production repository on October 28, 2026:
 
 | Founder | Authored commits | Selected focus |
 | --- | ---: | --- |
-| [Keenan Francisco](https://github.com/keenanfrancisco) | 286 | Spatial contracts, field validation, iOS capture, reliability, release safety |
-| [Caleb Ponce](https://github.com/calebponce) | 228 | Full-stack product delivery, reconstruction integration, security, sharing, field UX |
+| [Keenan Francisco](https://github.com/keenanfrancisco) | 460 | Spatial contracts, field validation, human review, security review, iOS capture, release safety |
+| [Caleb Ponce](https://github.com/calebponce) | 257 | Full-stack product delivery, reconstruction integration, security, sharing, field UX |
 
 These counts establish sustained authorship, not sole ownership of shared decisions. Outside reviewers cannot inspect the private Git objects; the internal verification method and selected references are in [CONTRIBUTIONS.md](CONTRIBUTIONS.md).
 

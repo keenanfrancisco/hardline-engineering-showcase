@@ -178,7 +178,7 @@
 
       <section class="credibility-line" aria-label="Case study facts">
         <p><strong>Private production system</strong><span>iOS, Python, TypeScript</span></p>
-        <p><strong>514 founder-authored commits</strong><span>GitHub API, 2026-09-08</span></p>
+        <p><strong>717 founder-authored commits</strong><span>GitHub API, 2026-10-28</span></p>
         <p><strong>Public artifact</strong><span>synthetic data only</span></p>
       </section>
 
@@ -260,6 +260,38 @@
   boundaries: auth / rate / quota</code></pre>
           </article>
 
+          <article class="decision-row">
+            <div class="decision-copy">
+              <p class="decision-owner">Selected authored work / Keenan</p>
+              <h3>Nothing is reviewed until a person approves it.</h3>
+              <p>
+                Corrections layer over detections and freeze into immutable revisions; only an
+                approved revision is the record. A shared link with no approval says plainly that
+                its locations are unreviewed AI detections, and cannot reach drafts.
+              </p>
+            </div>
+            <pre aria-label="Illustrative review states"><code><span>record_state</span>
+  draft       → labeled unreviewed
+  revision    → frozen, not yet trusted
+  approved    → the record</code></pre>
+          </article>
+
+          <article class="decision-row">
+            <div class="decision-copy">
+              <p class="decision-owner">Selected authored work / Keenan</p>
+              <h3>Review security before the first customer scan.</h3>
+              <p>
+                The record says where the pipes and wiring are inside a home. An adversarial review
+                ranked issues by who could reach them, fixed each one that crossed accounts or
+                reached a link holder behind a failing-first test, and made share links revocable.
+              </p>
+            </div>
+            <pre aria-label="Illustrative reachability ranking"><code><span>reachability</span>
+  unauthenticated  → fix first
+  any account      → fix next
+  link holder      → scope to one record</code></pre>
+          </article>
+
           <article class="decision-row shared-decision">
             <div class="decision-copy">
               <p class="decision-owner">Shared product discipline</p>
@@ -284,7 +316,7 @@
           <h2 id="founders-title">Built by Keenan Francisco and Caleb Ponce.</h2>
           <p>
             Counts below are attributed commits reported by GitHub for the private production
-            repository on September 8, 2026. Selected work was internally verified against authored
+            repository on October 28, 2026. Selected work was internally verified against authored
             commit evidence; outside reviewers cannot inspect those private objects, and attribution
             does not imply sole ownership of shared product decisions.
           </p>
@@ -298,13 +330,14 @@
                 <h3>Keenan Francisco</h3>
                 <a href="https://github.com/keenanfrancisco">@keenanfrancisco</a>
               </div>
-              <p><strong>286</strong><span>authored commits</span></p>
+              <p><strong>460</strong><span>authored commits</span></p>
             </div>
-            <p class="contribution-focus">Reliability, spatial contracts, field validation, iOS capture, and deployment safety.</p>
+            <p class="contribution-focus">Reliability, spatial contracts, field validation, human review, security, and iOS capture.</p>
             <ul>
               <li>Reworked capture-to-return coordinate and datum contracts across backend, web, and iOS.</li>
               <li>Built adversarial evaluator baselines and field-evidence reporting paths.</li>
               <li>Added wall-coverage gating, pipeline observability, secret scanning, and release CI.</li>
+              <li>Built human review and approval for utility records and ran a pre-launch adversarial security review.</li>
             </ul>
             <a class="profile-link" href="https://github.com/keenanfrancisco">View GitHub profile <span aria-hidden="true">↗</span></a>
           </article>
@@ -316,7 +349,7 @@
                 <h3>Caleb Ponce</h3>
                 <a href="https://github.com/calebponce">@calebponce</a>
               </div>
-              <p><strong>228</strong><span>authored commits</span></p>
+              <p><strong>257</strong><span>authored commits</span></p>
             </div>
             <p class="contribution-focus">Full-stack product delivery, reconstruction integration, security, sharing, and field UX.</p>
             <ul>
